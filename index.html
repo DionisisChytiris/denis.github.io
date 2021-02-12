@@ -26,6 +26,7 @@
     <h1>Hello world</h1>
     <p>This is my test gitgub page.</p>
     <button onClick="fadeOut()">Fade out</button>
+    <button onClick="fadeIn()">Fade In</button>
     <p id="demo"></p>
 
     <script>
@@ -35,6 +36,15 @@
             elem.style.opacity = 0;
             setTimeout(function(){
                 elem.style.display= 'none';
+            },1000)
+        }
+
+        function fadeIn(){
+            var elem = document.getElementById('demo');
+
+            elem.style.display = "block";
+            setTimeout(function(){
+                elem.style.opacity= 1;
             },1000)
         }
     </script>
